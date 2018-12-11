@@ -13,7 +13,18 @@
 </ion-header>
 
 
-<ion-content padding>  
-  
+<ion-content padding class = "settings">  
+  <ion-item>
+    <!--Input citta-->
+    <ion-label><strong>Città:</strong></ion-label>
+    <ion-input type="text" [(ngModel)]="citta"></ion-input>
+  </ion-item>
+
+  <!--Input provincia-->
+  <ion-item>
+    <ion-label><strong>Provincia:</strong></ion-label>
+    <ion-input type="text" [(ngModel)]="provincia"></ion-input>
+  </ion-item>
+  <button ion-button full (click)="getLocation()">Salva Città</button>
         
 </ion-content>

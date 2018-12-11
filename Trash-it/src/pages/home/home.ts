@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 
-import { Storage } from '@ionic/storage';
-
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -15,20 +13,11 @@ export class HomePage {
     provincia:string
    }
  
-  constructor(public navCtrl: NavController, private storage:Storage) {
+  constructor(public navCtrl: NavController) {
   }
 
   ionViewWillEnter(){
-    this.storage.get('location').then((val) => {
-      if (val != null){
-        this.location.citta = 'Ciao';
-      } else {
-        this.location = {
-          citta: 'Camerino',
-          provincia: 'MC'
-        }
-      }
-    })
+    
   }
 
 }
