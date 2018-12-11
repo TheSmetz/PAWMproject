@@ -37,8 +37,8 @@ $colors: (
   primary:     #488aff,
   secondary:   #32db64,
   danger:      #f53d3d,
-  lightGreen: #3AB54A,
-  darkGreen:  #0F6538,
+  lightGreen:  #3AB54A,
+  darkGreen:   #0F6538,
   light:       #ffffff,
   dark:        #222
 );
@@ -50,7 +50,7 @@ $toolbar-md-background:color($colors, lightGreen);
 $tabs-md-background:color($colors, lightGreen);
 $tabs-md-tab-color-active:color($colors, light);
 $tabs-md-tab-color:color($colors, lightGreen);  //inactive
-$tabs-md-tab-text-color:color($colors, dark);
+$tabs-md-tab-text-color:color($colors, light);
 
 //list in About page
 $list-md-background-color:color($colors, lightGreen);
