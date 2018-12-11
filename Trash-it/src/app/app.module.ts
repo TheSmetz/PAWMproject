@@ -10,7 +10,6 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
 import { SettingsPage } from '../pages/settings/settings';
-import { ContactPage } from '../pages/contact/contact';
 
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -21,7 +20,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     AboutPage,
-    ContactPage,
     HomePage,
     SettingsPage,
     TabsPage
@@ -34,7 +32,6 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     AboutPage,
-    ContactPage,
     HomePage,
     SettingsPage,
     TabsPage

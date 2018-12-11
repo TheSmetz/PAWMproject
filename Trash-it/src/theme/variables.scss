@@ -34,13 +34,27 @@ $app-direction: ltr;
 // The "primary" color is the only required color in the map.
 
 $colors: (
-  primary:    #488aff,
-  secondary:  #32db64,
-  danger:     #f53d3d,
-  light:      #f4f4f4,
-  dark:       #222
+  primary:     #488aff,
+  secondary:   #32db64,
+  danger:      #f53d3d,
+  lightGreen: #3AB54A,
+  darkGreen:  #0F6538,
+  light:       #ffffff,
+  dark:        #222
 );
 
+//Top toolbar style
+$toolbar-md-background:color($colors, lightGreen);
+
+//Bottom tabs
+$tabs-md-background:color($colors, lightGreen);
+$tabs-md-tab-color-active:color($colors, light);
+$tabs-md-tab-color:color($colors, lightGreen);  //inactive
+$tabs-md-tab-text-color:color($colors, dark);
+
+//list in About page
+$list-md-background-color:color($colors, lightGreen);
+$list-md-text-color:color($colors, light);
 
 // App iOS Variables
 // --------------------------------------------------
