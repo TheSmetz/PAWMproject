@@ -18,7 +18,7 @@
 //home style
 .home{
     background:color($colors, light);
-    color:color($colors, dark);
+    color:color($colors, dark); //colore testo ion-content (home)
     margin-top:30px;
 }
 
@@ -39,6 +39,10 @@
 //settings style
 .settings{
     background:color($colors, light);
+}
+
+.buttonSett{
+    background:color($colors, light, base);
 }
 
 .about{

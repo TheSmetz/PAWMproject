@@ -16,15 +16,15 @@
 <ion-content padding class = "settings">  
   <ion-item>
     <!--Input citta-->
-    <ion-label stacked class= "cittasett"><strong>Città:</strong></ion-label>
+    <ion-label color="light"><strong>Città:</strong></ion-label>
     <ion-input type="text" [(ngModel)]="citta"></ion-input>
   </ion-item>
 
   <!--Input provincia-->
   <ion-item>
-    <ion-label><strong>Provincia:</strong></ion-label>
+    <ion-label color="light"><strong>Provincia:</strong></ion-label>
     <ion-input type="text" [(ngModel)]="provincia"></ion-input>
   </ion-item>
-  <button ion-button full (click)="getLocation()">Salva Città</button>
+  <button ion-button color="darkGreen" full (click)="getLocation()">Salva Città</button>
         
 </ion-content>
