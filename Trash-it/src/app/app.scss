@@ -17,8 +17,8 @@
 
 //home style
 .home{
-    background:color($colors, darkGreen);
-    color:color($colors, light);
+    background:color($colors, light);
+    color:color($colors, dark);
     margin-top:30px;
 }
 
@@ -38,7 +38,7 @@
 
 //settings style
 .settings{
-    background:color($colors, darkGreen);
+    background:color($colors, light);
 }
 
 .settings .provinciaSett{
@@ -46,5 +46,5 @@
 }
 
 .about{
-    background:color($colors, darkGreen);
+    background:color($colors, light);
 }
