@@ -25,19 +25,8 @@
     </ion-row>
   </ion-grid>
 
-  <div class="wrapper">
-    <button ion-button (click)="getInfo()" class="button" color="lightGreen" border-radius:12px>
-      <strong>INFO</strong>
-    </button>
-  </div>
-
-  <div class="overlayButton">
-    <button ion-button (click)="getOverlay()" class="button" color="lightGreen" border-radius:12px>
-      <strong>OVERLAY</strong>
-    </button>
-  </div>
-  
-
-  <ion-img src="assets\imgs\icona.png"></ion-img>
+  <div>
+    <button ion-button round id="button" (click)="getInfo()">Info</button>
+  </div> 
 
 </ion-content>

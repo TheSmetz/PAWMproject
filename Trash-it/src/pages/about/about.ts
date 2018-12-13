@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { ViewInfoPage } from '../view-info/view-info';
-import { OverlayComponent } from '../../components/overlay/overlay';
+import { InfoPage } from '../info/info';
 
 @Component({
   selector: 'page-about',
@@ -13,12 +12,8 @@ export class AboutPage {
 
   }
 
-  getOverlay(){
-    this.navCtrl.push(OverlayComponent);
-  }
-
   getInfo(){
-    this.navCtrl.setRoot(ViewInfoPage);
+    this.navCtrl.push(InfoPage);
   }
 
 }

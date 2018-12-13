@@ -15,8 +15,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
-import { ViewInfoPage } from '../pages/view-info/view-info';
-import { OverlayComponent } from '../components/overlay/overlay';
+import { InfoPage } from '../pages/info/info';
 import { ConferimentoPage } from '../pages/conferimento/conferimento';
 
 //provider
@@ -29,8 +28,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
     HomePage,
     SettingsPage,
     TabsPage,
-    OverlayComponent,
-    ViewInfoPage,
+    InfoPage,
     ConferimentoPage
     
   ],
@@ -45,8 +43,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
     HomePage,
     SettingsPage,
     TabsPage,
-    ViewInfoPage,
-    OverlayComponent,
+    InfoPage,
     ConferimentoPage
   ],
   providers: [

@@ -16,26 +16,23 @@
 </div>
 
 <div id="container" style="margin-top: 20%">
-    <p>Codice a barre</p>
-    <ion-item  id="inputCodice">
-      <!--Input codiceABarre-->
-      <ion-input type="email" placeholder="8001050026066"></ion-input>
-     </ion-item>
-</div>
-<div id="container2" style="margin-top: 5%">
-  <button ion-button round color="lightGreen" full (click)="getBarcode()" >Conferimento</button>
+  <p>Codice a barre</p>
+  <ion-item  id="inputCodice">
+    <!--Input codiceABarre-->
+    <ion-input type="email" placeholder="{{getcodiceABarre()}}"></ion-input>
+    </ion-item>
 </div>
 
 <!--scanner-->
 <div style="margin-top: 10%">
-  <button ion-button round color="lightGreen" full (click)="scan()" >Scansiona Prodotto</button>  
-  <!-- <button ion-button (click) = "scan()">Scan</button> -->
-  <div *ngIf = "scannedData.text">
-  </div>
-  <div>
-    <label>Your barcode is</label>
+  <!--cambiare con scanCodice-->
+  <button ion-button round color="lightGreen" full (click)="openConferimento()" >Scansiona Prodotto</button>  
+  
+  <!-- <div *ngIf = "scannedData.text">
+   <label>Your barcode is</label>
     <br>
-    <span>{{scannedData.text}}</span>
-  </div>
+    <span>{{HomePage.codiceABarre}}</span>
+      
+  </div> -->
 </div>
 </ion-content>

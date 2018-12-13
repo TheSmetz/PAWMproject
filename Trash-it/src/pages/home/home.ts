@@ -21,31 +21,30 @@ export class HomePage {
     this.codiceABarre = "";
   }
 
-  scan(){
-    this.options = {
-      prompt: 'Scan your barcode'
-    };
-    this.scanner.scan(this.options).then((data) => {
-      this.scannedData = data;
-    }, (err) => {
-      console.log('Error :', err);
-    })
-    //this.scanner.scan().then(() => {}, (err) => {})
-  }
+getcodiceABarre(){
+  return this.codiceABarre;
+}
 
-  getBarcode(){
-   /*  if(this.codiceABarre == ""){
-      alert("Inserire codice a barre valido");
-    } else {
-      alert("Codice inserito " + this.codiceABarre);
-    } */
+scanCodice(){
+  this.options = {
+    prompt: 'Scan your barcode'
+  };
+  this.scanner.scan(this.options).then((data) => {
+    this.scannedData = data;
+  }, (err) => {
+    console.log('Error :', err);
+  })
 
-    this.navCtrl.push(ConferimentoPage);
+  //copio il codice nella variabile
+  this.codiceABarre = this.scannedData.text;
+}
 
-  }
+openConferimento() {
+  this.navCtrl.push(ConferimentoPage);
+}
 
-  ionViewWillEnter(){
-    
-  }
+ionViewWillEnter(){
+  
+}
 
 }
