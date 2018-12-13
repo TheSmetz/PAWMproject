@@ -15,6 +15,9 @@
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
 
+
+@import "../pages/home/home.scss";
+
 //home style
 .home{
     background:color($colors, light);
@@ -29,11 +32,6 @@
 //icone tabs bianche
 .tabs-md .tab-button-icon{
     color: #ccc;
-}
-
-//allineamento del testo div class in home
-.homeText{
-    text-align:center;
 }
 
 //settings style

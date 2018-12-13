@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { ConferimentoPage } from '../conferimento/conferimento';
 
 @Component({
   selector: 'page-home',
@@ -15,11 +16,14 @@ export class HomePage {
   }
 
   getBarcode(){
-    if(this.codiceABarre == ""){
+   /*  if(this.codiceABarre == ""){
       alert("Inserire codice a barre valido");
     } else {
       alert("Codice inserito " + this.codiceABarre);
-    }
+    } */
+
+    this.navCtrl.push(ConferimentoPage);
+
   }
 
   ionViewWillEnter(){

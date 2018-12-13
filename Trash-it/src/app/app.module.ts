@@ -17,6 +17,8 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ViewInfoPage } from '../pages/view-info/view-info';
 import { OverlayComponent } from '../components/overlay/overlay';
+import { ConferimentoPage } from '../pages/conferimento/conferimento';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +28,8 @@ import { OverlayComponent } from '../components/overlay/overlay';
     SettingsPage,
     TabsPage,
     OverlayComponent,
-    ViewInfoPage
+    ViewInfoPage,
+    ConferimentoPage
     
   ],
   imports: [
@@ -41,7 +44,8 @@ import { OverlayComponent } from '../components/overlay/overlay';
     SettingsPage,
     TabsPage,
     ViewInfoPage,
-    OverlayComponent
+    OverlayComponent,
+    ConferimentoPage
   ],
   providers: [
     StatusBar,

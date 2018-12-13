@@ -59,6 +59,19 @@ $list-md-text-color:color($colors, light);
 // --------------------------------------------------
 // iOS only Sass variables can go here
 
+//Top toolbar style
+$toolbar-ios-background:color($colors, lightGreen);
+
+//Bottom tabs
+$tabs-ios-background:color($colors, lightGreen);
+$tabs-ios-tab-color-active:color($colors, light);
+$tabs-ios-tab-color:color($colors, lightGreen);  //inactive
+$tabs-ios-tab-text-color:color($colors, light);
+
+//list in About page
+$list-ios-background-color:color($colors, lightGreen);
+$list-ios-text-color:color($colors, light);
+
 
 
 

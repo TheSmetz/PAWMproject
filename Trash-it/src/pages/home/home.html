@@ -1,11 +1,11 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>Home</ion-title>
+    <ion-title>Trash-it</ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding class="home">   <!--do un nome in modo da poterla richiamare nel file app.scss-->
-  <div class="homeText">
+  <div>
     <h2>Benvenuto su Trash-it</h2>
   
     <p>
@@ -14,12 +14,13 @@
       riciclo del prodotto.
     </p>
 </div>
-<div style="margin-top: 20%">
-    <ion-item  class="homeCodice">
+
+<div id="container" style="margin-top: 20%">
+    <p>Codice a barre</p>
+    <ion-item  id="inputCodice">
         <!--Input codiceABarre-->
-        <ion-label color="light"><strong>Codice A Barre:</strong></ion-label>
-        <ion-input type="text" [(ngModel)]="codiceABarre"></ion-input>
+        <ion-input type="email" placeholder="codiceABarre">8001050026066</ion-input>
       </ion-item>
-    <button ion-button color="lightGreen" full (click)="getBarcode()" >Scansiona Prodotto</button>
+    <button ion-button round color="lightGreen" full (click)="getBarcode()" >Scansiona Prodotto</button>
 </div>
 </ion-content>
