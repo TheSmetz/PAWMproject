@@ -23,6 +23,19 @@
      </ion-item>
 </div>
 <div id="container2" style="margin-top: 5%">
-  <button ion-button round color="lightGreen" full (click)="getBarcode()" >Scansiona Prodotto</button>
+  <button ion-button round color="lightGreen" full (click)="getBarcode()" >Conferimento</button>
+</div>
+
+<!--scanner-->
+<div style="margin-top: 10%">
+  <button ion-button round color="lightGreen" full (click)="scan()" >Scansiona Prodotto</button>  
+  <!-- <button ion-button (click) = "scan()">Scan</button> -->
+  <div *ngIf = "scannedData.text">
+  </div>
+  <div>
+    <label>Your barcode is</label>
+    <br>
+    <span>{{scannedData.text}}</span>
+  </div>
 </div>
 </ion-content>

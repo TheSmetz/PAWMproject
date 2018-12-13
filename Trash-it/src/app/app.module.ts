@@ -19,6 +19,8 @@ import { ViewInfoPage } from '../pages/view-info/view-info';
 import { OverlayComponent } from '../components/overlay/overlay';
 import { ConferimentoPage } from '../pages/conferimento/conferimento';
 
+//provider
+import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 
 @NgModule({
   declarations: [
@@ -50,6 +52,7 @@ import { ConferimentoPage } from '../pages/conferimento/conferimento';
   providers: [
     StatusBar,
     SplashScreen,
+    BarcodeScanner,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -1,5 +1,7 @@
 {
   "name": "Trash-it",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
