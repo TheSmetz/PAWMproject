@@ -25,12 +25,19 @@ getcodiceABarre(){
   return this.codiceABarre;
 }
 
+setcodiceABarre(){
+  this.codiceABarre = this.scannedData.text;
+}
+
+
+
 scanCodice(){
   this.options = {
-    prompt: 'Scan your barcode'
+    prompt: 'Scansiona codice a barre'
   };
   this.scanner.scan(this.options).then((data) => {
     this.scannedData = data;
+    
   }, (err) => {
     console.log('Error :', err);
   })

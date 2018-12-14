@@ -15,7 +15,7 @@
     </p>
 </div>
 
-<div id="container" style="margin-top: 20%">
+<div id="container" style="margin-top: 20%" >
   <p>Codice a barre</p>
   <ion-item  id="inputCodice">
     <!--Input codiceABarre-->
@@ -26,13 +26,15 @@
 <!--scanner-->
 <div style="margin-top: 10%">
   <!--cambiare con scanCodice-->
-  <button ion-button round color="lightGreen" full (click)="openConferimento()" >Scansiona Prodotto</button>  
+  <button ion-button round color="lightGreen" full (click)="scanCodice()" >Scansiona Prodotto</button>  
+  
   
   <!-- <div *ngIf = "scannedData.text">
    <label>Your barcode is</label>
     <br>
-    <span>{{HomePage.codiceABarre}}</span>
+    <span>{{scannedData.text}}</span>
       
   </div> -->
 </div>
+<span *ngIf = "scannedData.text" >{{scannedData.text}}</span>
 </ion-content>
