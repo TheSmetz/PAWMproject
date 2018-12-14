@@ -26,7 +26,6 @@
     "@ionic-native/status-bar": "~4.17.0",
     "@ionic/storage": "2.2.0",
     "cordova-android": "7.1.4",
-    "cordova-plugin-console": "1.1.0",
     "cordova-plugin-device": "^2.0.2",
     "cordova-plugin-ionic-keyboard": "^2.1.3",
     "cordova-plugin-ionic-webview": "^2.3.1",
@@ -48,7 +47,6 @@
   "cordova": {
     "plugins": {
       "phonegap-plugin-barcodescanner": {},
-      "cordova-plugin-console": {},
       "cordova-plugin-whitelist": {},
       "cordova-plugin-statusbar": {},
       "cordova-plugin-device": {},

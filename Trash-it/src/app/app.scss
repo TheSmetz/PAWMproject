@@ -46,3 +46,9 @@
 .about{
     background:color($colors, light);
 }
+
+//hide scrollbars
+::-webwit-scrollbar,
+*::-webkit-scrollbar {
+    display:none;
+}
