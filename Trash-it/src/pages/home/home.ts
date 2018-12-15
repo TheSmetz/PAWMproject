@@ -14,6 +14,7 @@ export class HomePage {
 
   codiceABarre:string;
 
+  //opzioni relative alla schermata di scansione
   options: BarcodeScannerOptions;
   scannedData:any={};
  
@@ -33,12 +34,18 @@ setcodiceABarre(){
 
 scanCodice(){
   this.options = {
-    prompt: 'Scansiona codice a barre'
+    prompt: 'Scansiona codice a barre',
+    showFlipCameraButton: false,
+    showTorchButton: true,
+    resultDisplayDuration: 0, //tempo discansione
+    formats: 'EAN_13' //limito al classico codice a 13 cifre
   };
   this.scanner.scan(this.options).then((data) => {
+    //codice catturato
     this.scannedData = data;
     
   }, (err) => {
+    //se c'è un errore
     console.log('Error :', err);
   })
 

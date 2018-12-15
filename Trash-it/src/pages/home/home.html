@@ -4,7 +4,7 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding class="home">   <!--do un nome in modo da poterla richiamare nel file app.scss-->
+<ion-content padding id="home">   <!--do un nome in modo da poterla richiamare nel file app.scss-->
   <div>
     <h2>Benvenuto su Trash-it</h2>
   
@@ -17,17 +17,16 @@
 
 <div id="container" style="margin-top: 20%" >
   <p>Codice a barre</p>
-  <ion-item  id="inputCodice">
+  <ion-item>
     <!--Input codiceABarre-->
     <ion-input type="email" placeholder="{{getcodiceABarre()}}"></ion-input>
     </ion-item>
 </div>
 
 <!--scanner-->
-<div style="margin-top: 10%">
-  <!--cambiare con scanCodice-->
-  <button ion-button round color="lightGreen" full (click)="scanCodice()" >Scansiona Prodotto</button>  
-  
+<div id = "scansionaButton">
+  <button ion-button round (click)="scanCodice()" >Scansiona Prodotto</button>  
+</div>
   
   <!-- <div *ngIf = "scannedData.text">
    <label>Your barcode is</label>
@@ -35,6 +34,6 @@
     <span>{{scannedData.text}}</span>
       
   </div> -->
-</div>
+
 <span>{{scannedData.text}}</span>
 </ion-content>

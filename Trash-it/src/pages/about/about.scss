@@ -1,8 +1,14 @@
-about-page {
+page-about {
     
-    #wrapper {
-        display: block; 
-        margin-left:auto; 
-        margin-right: auto;
-    }
+   #about {
+       text-align: center;
+   }
+
+   #infoArea {
+       text-align: center;
+
+       button {
+           background-color: color($colors, lightGreen);
+       }
+   }
 }

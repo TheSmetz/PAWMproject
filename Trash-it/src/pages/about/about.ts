@@ -16,4 +16,8 @@ export class AboutPage {
     this.navCtrl.push(InfoPage);
   }
 
+ /*  inviaMessaggio(msg: {email: string, messaggio: string}) {
+    mailSender.sendTo(msg.email, msg.messaggio);
+  } */
+
 }
