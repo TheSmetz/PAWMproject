@@ -14,12 +14,49 @@
 
 
 <ion-content padding class = "conferimentoProdotto">
-  <div text-center>
-      <h2>Prodotto Scansionato:</h2>
-  
-      <p>
-        descrizione prodotto
-      </p>
+  <div>
+      <!-- social card -->
+      <ion-card id="prodottoCard">
+
+        <ion-item>
+          <ion-avatar item-start>
+            <img src="resources/img/avatar.png" id="avatarPng">
+          </ion-avatar>
+          <div id="avatarInfo">
+            <h2>Nome Cognome</h2>
+            <p>Data</p>
+          </div>          
+        </ion-item>
+        
+        <p id="name">Nome Prodotto</p>
+        <p>Codice a barre: {{getCodice()}}</p>
+        <img src="assets/imgs/levissima.jpg" id = "productImg">
+      
+        <ion-card-content>
+          <p id="descrizione">Descrizione prodotto</p>
+        </ion-card-content>
+      
+        <ion-row>
+          <ion-col>
+            <button ion-button icon-start clear small>
+              <ion-icon name="thumbs-up"></ion-icon>
+              <div>Corretto</div>
+            </button>
+          </ion-col>
+          <ion-col>
+            <button ion-button icon-start clear small>
+              <ion-icon name="thumbs-down"></ion-icon>
+              <div>Incorretto</div>
+            </button>
+          </ion-col>
+          <!-- <ion-col center text-center>
+            <ion-note>
+              11h ago
+            </ion-note>
+          </ion-col> -->
+        </ion-row>
+      
+      </ion-card>
 
   </div>
 

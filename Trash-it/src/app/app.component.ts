@@ -16,11 +16,11 @@ export class MyApp {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
      
-     // statusBar.styleDefault();
+     statusBar.styleDefault();
 
-      //custom statusbar
-      statusBar.styleBlackTranslucent();
-      //statusBar.backgroundColorByHexString('#ffffff');
+    //statusbar stesso colore 
+    statusBar.overlaysWebView(true);
+    statusBar.backgroundColorByHexString('#0F6538');
 
       splashScreen.hide();
     });

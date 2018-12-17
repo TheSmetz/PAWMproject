@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
 
 //pages
-import { AboutPage } from '../about/about';
 import { HomePage } from '../home/home';
+import { ProductsPage } from '../products/products';
+//import { ConferimentoPage } from '../conferimento/conferimento';
+import { AboutPage } from '../about/about';
 import { SettingsPage } from '../settings/settings';
 
 @Component({
@@ -12,8 +14,9 @@ export class TabsPage {
 
   //impostazione dei tabs
   tab1Root = HomePage;
-  tab2Root = AboutPage;
-  tab3Root = SettingsPage;
+  tab2Root = ProductsPage;
+  tab3Root = AboutPage;
+  tab4Root = SettingsPage;
 
   constructor() {
 

@@ -9,31 +9,34 @@
     <h2>Benvenuto su Trash-it</h2>
   
     <p>
-      Inserire il codice a barre del prodotto nel riquadro sottostante, premere poi 
-      il pulsante <B>SCANSIONA PRODOTTO</B> per ottenere informazioni sul corretto
-      riciclo del prodotto.
+      Avviare <B>SCANSIONA PRODOTTO</B> per utilizzare la fotocamera oppure inserire il codice a barre 
+      nel riquadro sottostante, attraverso <B>CONFERISCI PRODOTTO</B> sarà possibile ottenere informazioni 
+      sul corretto riciclo del prodotto.
     </p>
-</div>
-
-<div id="container" style="margin-top: 20%" >
-  <p>Codice a barre</p>
-  <ion-item>
-    <!--Input codiceABarre-->
-    <ion-input type="email" placeholder="{{getcodiceABarre()}}"></ion-input>
-    </ion-item>
 </div>
 
 <!--scanner-->
 <div id = "scansionaButton">
-  <button ion-button round (click)="scanCodice()" >Scansiona Prodotto</button>  
+  <button ion-button round (click)="scanCodice()">Scansiona Prodotto</button>  
 </div>
+
+
+<div id="container">
+  <p>Codice a barre:</p>
+  <ion-item clear input>
+    <!--Input codiceABarre-->
+    <!-- tel invece di number poichè non supporta la restrizione a 13 cifre -->
+    <ion-input type="tel" clearInput maxlength="13" placeholder="{{getcodiceABarre()}}" [(ngModel)]="codiceABarre"></ion-input>
+  </ion-item>
+  <button id="confButton" ion-button round (click)="openConferimento()">Conferisci Prodotto</button>
+</div>
+
+
   
-  <!-- <div *ngIf = "scannedData.text">
+  <!-- <div *ngIf = "getcodiceABarre()">
    <label>Your barcode is</label>
     <br>
-    <span>{{scannedData.text}}</span>
+    <span>{{getcodiceABarre()}}</span>
       
   </div> -->
-
-<span>{{scannedData.text}}</span>
 </ion-content>

@@ -1,4 +1,48 @@
 page-conferimento {
+    
+    text-align: center;
 
+    #prodottoCard {
+
+        position: relative;
+        text-align: center;
+        //width: 600px;
+        //height: 600px;
+        //margin-left:auto; 
+        //margin-right: auto; 
+        background-color: white;
+
+        #name {
+            margin-top: 20px;
+        }
+
+        #descrizione {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        #avatarPng {
+            display: block;         
+        }
+
+        #avatarInfo {
+            h2, p {
+                color: white;
+            }
+        }
+
+        #productImg {        
+            display: block;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+
+        button {
+            color: color($colors, lightGreen);
+        }
+
+    }
 }
 

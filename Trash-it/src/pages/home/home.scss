@@ -11,11 +11,19 @@ page-home {
        // width: 300px;
     //}
 
-   
+    #scansionaButton {
+        margin-top: 10%;
+
+        button {
+            background-color: color($colors, lightGreen);
+        }
+    }   
 
     //stile div contenente input e button
     #container {
         width: 300px; 
+        margin-top: 50px;
+        margin-bottom: 50px;
         margin-left:auto; 
         margin-right: auto; 
         background-color: white;
@@ -26,19 +34,28 @@ page-home {
             text-align: center;
             font-size: 20px;
             width: 300px;
+            margin-top: auto;
         }
 
-        ion-input {
-            //margin-left: 50px;
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            margin: 0; 
         }
+
+        #impButton, #confButton {
+
+            margin-top: 30px;
+            background-color: color($colors, lightGreen);
+        }
+
+       /*  ion-input {
+            margin-left: 50px;
+        } */
         
     }
 
-    #scansionaButton {
-        margin-top: 10%;
-
-        button {
-            background-color: color($colors, lightGreen);
-        }
-    }
+    
 }

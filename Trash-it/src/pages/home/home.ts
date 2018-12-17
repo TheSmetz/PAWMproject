@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, ModalController } from 'ionic-angular';
+
+//providers
 
 //pagine utilizzate
 import { ConferimentoPage } from '../conferimento/conferimento';
+
 import { BarcodeScanner, BarcodeScannerOptions } from '@ionic-native/barcode-scanner';
 
 @Component({
@@ -18,7 +21,8 @@ export class HomePage {
   options: BarcodeScannerOptions;
   scannedData:any={};
  
-  constructor(public navCtrl: NavController, public scanner:BarcodeScanner) {
+  constructor(public navCtrl: NavController, public scanner:BarcodeScanner, public modalCtrl : ModalController) {
+    
     this.codiceABarre = "";
   }
 
@@ -26,10 +30,9 @@ getcodiceABarre(){
   return this.codiceABarre;
 }
 
-setcodiceABarre(){
-  this.codiceABarre = this.scannedData.text;
+setcodiceABarre(codice:string){
+  this.codiceABarre = codice;
 }
-
 
 
 scanCodice(){
@@ -43,6 +46,7 @@ scanCodice(){
   this.scanner.scan(this.options).then((data) => {
     //codice catturato
     this.scannedData = data;
+    this.codiceABarre = this.scannedData.text;
     
   }, (err) => {
     //se c'è un errore
@@ -53,9 +57,18 @@ scanCodice(){
   this.codiceABarre = this.scannedData.text;
 }
 
+//conferisco prodotto passango il codice a barre
 openConferimento() {
-  this.navCtrl.push(ConferimentoPage);
+  this.navCtrl.push(ConferimentoPage, {
+    codiceABarreP: this.codiceABarre
+    //, param2..
+  });
 }
+
+/* openModal(){
+  var modalPage = this.modalCtrl.create('ProductsPage');
+  modalPage.present();
+} */
 
 ionViewWillEnter(){
   

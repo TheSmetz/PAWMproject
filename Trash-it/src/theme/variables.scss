@@ -39,17 +39,19 @@ $colors: (
   lightGreen:  #3AB54A,
   darkGreen:   #0F6538,
   light:       #ffffff,
+  gray:        #CCCCCC,
   dark:        #222
 );
 
 //Top toolbar style
 $toolbar-md-background:color($colors, lightGreen);
+//$toolbar-md-title-text-color:color($colors, lightGreen);
 
 //Bottom tabs
-$tabs-md-background:color($colors, lightGreen);
-$tabs-md-tab-color-active:color($colors, light);
-$tabs-md-tab-color:color($colors, lightGreen);  //inactive
-$tabs-md-tab-text-color:color($colors, light);
+$tabs-md-background:color($colors, light);
+$tabs-md-tab-color-active:color($colors, lightGreen);
+//$tabs-md-tab-color:color($colors, lightGreen);  //inactive
+$tabs-md-tab-text-color:color($colors, gray);
 
 //list in About page
 $list-md-background-color:color($colors, lightGreen);
